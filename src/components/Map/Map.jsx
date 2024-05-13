@@ -6,6 +6,7 @@ import { Icon } from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import { iconMappings, marqueurs } from './constantes';
 import './Map.scss';
+import LocationMarker from './LocationMarker';
 
 const Map = () => {
   const [selectedType, setSelectedType] = useState('Tous');
@@ -23,7 +24,7 @@ const Map = () => {
   const handleTypeChange = (e) => {
     setSelectedType(e.target.value);
   };
-  const Beauvais = [49.4300997, 2.0823355]; // a mettre dans le state pour definir le lieu par défaut
+  const Strasbourg = [48.584614, 7.7507127]; // a mettre dans le state pour definir le lieu par défaut
   return (
     <section className="info-carte">
       <div>
@@ -37,7 +38,7 @@ const Map = () => {
         </select>
       </div>
       <MapContainer
-        center={Beauvais}
+        center={Strasbourg}
         zoom={13}
         style={{ height: '500px', width: '100%' }}
       >
@@ -56,6 +57,7 @@ const Map = () => {
             </Marker>
           ))}
         </MarkerClusterGroup>
+        <LocationMarker />
       </MapContainer>
     </section>
   );
@@ -64,3 +66,5 @@ const Map = () => {
 export default Map;
 
 // https://www.linkedin.com/pulse/tutoriel-sur-lutilisation-de-leaflet-avec-react-christian-humbert-qoyhe/
+
+// https://stackoverflow.com/questions/66500181/how-to-locate-react-leaflet-map-to-users-current-position-and-get-the-borders-f

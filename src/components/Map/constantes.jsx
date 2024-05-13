@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import leaflet from 'leaflet';
 // marqueurs sont les données recuperé en API
 export const marqueurs = [
   {
@@ -43,3 +44,11 @@ export const iconMappings = {
     iconSize: [38, 38],
   },
 };
+
+export default leaflet.icon({
+  iconSize: [25, 41],
+  iconAnchor: [10, 41],
+  popupAnchor: [2, -40],
+  iconUrl: 'https://unpkg.com/leaflet@1.6/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.6/dist/images/marker-shadow.png',
+});

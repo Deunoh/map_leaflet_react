@@ -6,22 +6,28 @@ import icon from './constantes';
 
 const LocationMarker = () => {
   const [position, setPosition] = useState(null);
-  const [bbox, setBbox] = useState([]);
+  // const [bbox, setBbox] = useState([]);
 
   const map = useMap();
 
   useEffect(() => {
-    map.locate().on('locationfound', function (e) {
-      setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
+    map.locate().on('locationfound', function (event) {
+      setPosition(event.latlng);
+      map.flyTo(event.latlng, map.getZoom());
       // const radius = e.accuracy;
       // const circle = leaflet.circle(e.latlng, radius);
       // circle.addTo(map);
-      setBbox(e.bounds.toBBoxString().split(','));
+      // setBbox(e.bounds.toBBoxString().split(','));
     });
   }, [map]);
-
-  return position === null ? null : <Marker position={position} icon={icon} />;
+  console.log(position);
+  return position === null ? null : (
+    <Marker position={position} icon={icon}>
+      <Popup>
+        Latitude : {position.lat}, Longitude : {position.lng}
+      </Popup>
+    </Marker>
+  );
 };
 
 export default LocationMarker;

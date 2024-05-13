@@ -34,7 +34,7 @@ export const marqueurs = [
   },
   {
     id: 2251,
-    name: 'Petite cachette ',
+    name: 'Ravitaillement',
     coordinates: [49.44391, 2.077403],
     type: 'Abri',
     description: '',
@@ -44,6 +44,13 @@ export const marqueurs = [
     name: 'Regroupement de zombie ',
     coordinates: [49.453173, 2.067404],
     type: 'Risque',
+    description: 'En déplacement vers Beauvais',
+  },
+  {
+    id: 2252,
+    name: 'Regroupement de zombie ',
+    coordinates: [49.448252820088854, 2.06996710732251],
+    type: 'Santé',
     description: 'En déplacement vers Beauvais',
   },
 
@@ -61,19 +68,19 @@ export const iconMappings = {
     iconSize: [38, 38],
   },
   Zombie: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/218/218153.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/1233/1233009.png',
     iconSize: [38, 38],
   },
   Abri: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/3724/3724982.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/3010/3010995.png',
     iconSize: [38, 38],
   },
   Armes: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/3627/3627634.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/427/427276.png',
     iconSize: [38, 38],
   },
   Risque: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/128/6725/6725430.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/1028/1028690.png',
     iconSize: [38, 38],
   },
   Rassemblement: {
@@ -85,7 +92,11 @@ export const iconMappings = {
     iconSize: [38, 38],
   },
   Nourriture: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/1043/1043940.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/4417/4417832.png',
+    iconSize: [38, 38],
+  },
+  Santé: {
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/7196/7196589.png',
     iconSize: [38, 38],
   },
 };

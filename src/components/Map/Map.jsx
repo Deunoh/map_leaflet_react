@@ -42,10 +42,17 @@ const Map = () => {
         zoom={13}
         style={{ height: '500px', width: '100%' }}
       >
+        {/* alternative skin for the map */}
         <TileLayer
+          url="https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=b55abed522d84edb9019094f729d1a50"
+          attribution='&copy; <a href="https://www.thunderforest.com/maps/mobile-atlas/">Thunderforest.MobileAtlas</a> contributors'
+        />
+
+        {/* Default skin */}
+        {/* <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
+        /> */}
         <MarkerClusterGroup>
           {filteredMarkers.map((city) => (
             <Marker

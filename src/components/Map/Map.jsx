@@ -53,7 +53,10 @@ const Map = () => {
               position={city.coordinates}
               icon={getCustomIcon(city.type)}
             >
-              <Popup>{city.description}</Popup>
+              <Popup>
+                {city.name}
+                {city.description}
+              </Popup>
             </Marker>
           ))}
         </MarkerClusterGroup>

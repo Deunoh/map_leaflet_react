@@ -20,10 +20,10 @@ export const marqueurs = [
 
   {
     id: 2248,
-    name: 'Gros zombie',
-    coordinates: [49.4282, 2.0821],
+    name: 'Zombie ',
+    coordinates: [49.4392, 2.0852],
     type: 'Zombie',
-    description: 'vraiment un gros zombie',
+    description: 'Groupe de 3 zombies',
   },
   {
     id: 2250,
@@ -34,7 +34,7 @@ export const marqueurs = [
   },
   {
     id: 2251,
-    name: 'Ravitaillement',
+    name: 'Maison sécurisée',
     coordinates: [49.44391, 2.077403],
     type: 'Abri',
     description: '',
@@ -44,14 +44,28 @@ export const marqueurs = [
     name: 'Regroupement de zombie ',
     coordinates: [49.453173, 2.067404],
     type: 'Risque',
-    description: 'En déplacement vers Beauvais',
+    description: '',
   },
   {
     id: 2252,
-    name: 'Regroupement de zombie ',
+    name: 'Zone de soin ',
     coordinates: [49.448252820088854, 2.06996710732251],
     type: 'Santé',
-    description: 'En déplacement vers Beauvais',
+    description: '',
+  },
+  {
+    id: 2252,
+    name: 'Superette ',
+    coordinates: [49.4371, 2.0805],
+    type: 'Ravitaillement',
+    description: '',
+  },
+  {
+    id: 2252,
+    name: 'Rassemblement ',
+    coordinates: [49.4414, 2.0764],
+    type: 'Rassemblement',
+    description: '',
   },
 
   // etc
@@ -84,14 +98,14 @@ export const iconMappings = {
     iconSize: [38, 38],
   },
   Rassemblement: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/5302/5302786.png',
+    iconUrl: ' https://cdn-icons-png.flaticon.com/128/1581/1581030.png',
     iconSize: [38, 38],
   },
   Communication: {
     iconUrl: 'https://cdn-icons-png.flaticon.com/512/5302/5302786.png',
     iconSize: [38, 38],
   },
-  Nourriture: {
+  Ravitaillement: {
     iconUrl: 'https://cdn-icons-png.flaticon.com/128/4417/4417832.png',
     iconSize: [38, 38],
   },

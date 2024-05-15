@@ -47,25 +47,32 @@ export const marqueurs = [
     description: '',
   },
   {
-    id: 2252,
+    id: 2253,
     name: 'Zone de soin ',
     coordinates: [49.448252820088854, 2.06996710732251],
     type: 'Santé',
     description: '',
   },
   {
-    id: 2252,
+    id: 2254,
     name: 'Superette ',
     coordinates: [49.4371, 2.0805],
     type: 'Ravitaillement',
     description: '',
   },
   {
-    id: 2252,
+    id: 2255,
     name: 'Rassemblement ',
     coordinates: [49.4414, 2.0764],
     type: 'Rassemblement',
     description: '',
+  },
+  {
+    id: 2256,
+    name: 'Telephone ',
+    coordinates: [49.4426, 2.0789],
+    type: 'Communication',
+    description: 'Cabine telephonique',
   },
 
   // etc
@@ -102,7 +109,7 @@ export const iconMappings = {
     iconSize: [38, 38],
   },
   Communication: {
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/5302/5302786.png',
+    iconUrl: 'https://cdn-icons-png.flaticon.com/512/5384/5384559.png',
     iconSize: [38, 38],
   },
   Ravitaillement: {

@@ -54,15 +54,15 @@ const Map = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         /> */}
         <MarkerClusterGroup>
-          {filteredMarkers.map((city) => (
+          {filteredMarkers.map((poi) => (
             <Marker
-              key={city.id}
-              position={city.coordinates}
-              icon={getCustomIcon(city.type)}
+              key={poi.id}
+              position={poi.coordinates}
+              icon={getCustomIcon(poi.type)}
             >
               <Popup>
-                {city.name}
-                {city.description}
+                {poi.name}
+                {poi.description}
               </Popup>
             </Marker>
           ))}
